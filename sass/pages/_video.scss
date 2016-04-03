@@ -1,0 +1,41 @@
+.video{
+	background: url('../img/bg-2.jpg') center no-repeat;
+	background-color: $bg-mask;
+	background-blend-mode: overlay;
+	box-sizing: border-box;
+	margin-top: 100px;
+	position: relative;
+	padding-top: 300px;
+	padding-left: 13%;
+	height: 900px;
+	&::after{
+		border: 1px solid $base-color;
+		content: "";
+		height: 81%;
+		left: 9.5%;
+		position: absolute;
+		top: 9.5%;
+		width: 81%;
+		z-index: 1;
+	}
+	&__header{
+		@extend %header-left-align;
+		color: $base-color;
+		max-width: 520px;
+		width: 50%;
+		&::before{
+			border-color: $text-color-light;
+		}
+	}
+	&__description{
+		@extend %description-left-align;
+		color: $text-color-light;
+		margin-bottom: 40px;
+		max-width: 520px;
+		width: 60%;
+	}
+	&__button{
+		@extend %button;
+		margin-left: calc(50% - 110px);
+	}
+}

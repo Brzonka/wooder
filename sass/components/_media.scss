@@ -1,0 +1,232 @@
+@media (min-width: 550px){
+	.logo{
+		&__text{
+			&::after{
+				left: 38px;
+				top: calc(50% - 2px);
+				width: 50px;
+			}
+		}
+	}
+	.video{
+		&__header{
+			width: 50%;
+		}
+		&__button{
+			margin-left: 87px;
+		}
+	}
+}
+@media (min-width: 900px){
+	.logo{
+		margin: 29px 27px;
+		left: calc(50% - 330px);
+	}
+	.navigation{
+		background: none;
+		left: calc(50% - 50px);
+		width: auto;
+		&__menu{
+			display: none;
+		}
+		&__list{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			width: 100%;
+			&__item{
+				border: none;
+				display: inline-block;
+				margin: 20px 40px;
+				padding: 0;
+			}
+		}
+	}
+	.prelude{
+		height: 1040px;
+		padding-top: 400px;
+		&__header{
+			letter-spacing: 15px;
+		}
+	}
+	.prelude,
+	.video{
+		&__button{
+			height: 55px;
+			width: 300px;
+		}
+	}
+	.prelude__button{
+		margin: 60px 0 0 -300px;
+	}
+	.furniture,
+	.decor,
+	.quality,
+	.about{
+		max-width: 1254px;
+	}
+	.furniture,
+	.decor,
+	.about{
+		padding-bottom: 230px;
+		padding-top: 130px;
+		&__header,
+		&__description,
+		&__link{
+			width: calc(50% - 114px);
+		}
+		&__photo{
+			position: absolute;
+			width: calc(50% - 12px);
+		}
+	}
+	.furniture{
+		&__photo{
+			right: 27px;
+			top: 0;
+		}
+	}
+	.decor,
+	.about{
+		&__header,
+		&__description,
+		&__link{
+			float: right;
+			clear: right;
+		}
+		&__photo{
+			left: 27px;
+			top: 0;
+		}
+	}
+	.about{
+		&__header,
+		&__description,
+		&__link{
+			margin-right: 30px;
+		}
+	}
+	.quality{
+		position: relative;
+		&__header{
+			&::after{
+				top: 55px;
+			}
+		}
+		&__description{
+			width: 600px;	
+		}
+		&__list{
+			&__item{
+				display: inline-block;
+				margin-left: 22px;
+				margin-right: 22px;			
+			}
+		}
+	}
+	.video{
+		padding-left: 22%;
+	}
+}
+@media (min-width: 1080px){
+	.furniture,
+	.decor,
+	.about{
+		padding-top: 150px;
+		&__header,
+		&__description,
+		&__link{
+			width: calc(50% - 194px);
+		}
+		&__link{
+			&::before{
+				margin-top: 18px;
+				width: 45px;
+			}
+		}
+	}
+	.furniture,
+	.video{
+		&__header,
+		&__description{
+			margin-left: 177px;
+		}
+		&__header{
+			&::before{
+				left: -177px; 
+				width: 150px;
+			}
+		}
+		&__description{
+			&::before{
+				left: -72px;
+				width: 45px;
+			}
+		}
+	}
+	.furniture{
+		&__link{
+			margin-left: 177px;
+		}
+	}
+	.decor{
+		margin-bottom: 150px;
+		&__header,
+		&__description,
+		&__link{
+			margin-right: 177px;
+		}
+		&__header{
+			&::after{
+				right: -177px;
+				width: 150px;
+			}
+		}
+		&__description{
+			&::after{
+				right: -72px;
+				width: 45px;
+			}
+		}
+	}
+	.quality{
+		&__list{
+			&__item{
+				margin-left: 55px;
+				margin-right: 55px;			
+			}
+		}
+	}
+	.video{
+		&__button{
+			margin-left: 170px;
+		}
+	}
+	.about{
+		&__header,
+		&__description{
+			margin-left: 127px;
+		}
+		&__header{
+			&::before{
+				left: -177px; 
+				width: 150px;
+			}
+		}
+		&__description{
+			&::before{
+				left: -72px;
+				width: 45px;
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+	.footer-section{
+		&__copyright{
+			margin-left: calc(50% - 600px);
+		}
+		&__author{
+			margin-right: calc(50% - 600px);
+		}
+	}
+}

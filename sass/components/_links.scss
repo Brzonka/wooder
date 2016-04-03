@@ -1,0 +1,25 @@
+%link-left-align,
+%link-right-align{
+	color: $text-color-dark;
+	display: block;
+	@include font-size($link-font-sizes);
+	font-weight: bold;
+	position: relative;
+	text-transform: uppercase;
+	&::before{
+		border-top: 2px solid $second-color;
+		content: "";
+		margin-top: 18px;
+		position: absolute;
+		width: 35px;
+	}
+}
+%link-left-align{
+	margin-left: 87px;
+}
+%link-right-align{
+	margin-right: 87px;
+}
+%link-arrow{
+	stroke: $base-color;
+}

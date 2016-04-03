@@ -1,0 +1,23 @@
+.about{
+	margin-top: 100px;
+	margin-bottom: 180px;
+	max-width: 650px;
+	position: relative;
+	&__header{
+		@extend %header-left-align;
+		color: $text-color-dark;
+	}
+	&__description{
+		@extend %description-left-align;
+		color: $text-color-darklight;
+	}
+	&__link{
+		@extend %link-left-align;
+		&__arrow{
+			@extend %link-arrow;
+		}
+	}
+	&__photo{
+		@extend %photo;
+	}
+}

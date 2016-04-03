@@ -1,0 +1,46 @@
+//Colors
+$gold: rgb(190, 166, 124);
+$dark-gold: rgb(169, 148, 110);
+$white: rgb(255, 255, 255);
+$black: rgb(1, 1, 1);
+$grey: rgb(70, 70, 70);
+$grey-light: rgb(110, 110, 110);
+$base-color: $gold;
+$second-color: $dark-gold;
+$text-color-dark: $black;
+$text-color-darklight: $grey;
+$text-color-light: $white;
+$text-color-darklight-navi: $grey-light;
+$bg-mask: rgba(0,0,0,0.8);
+
+//Fonts
+$breakpoints: (
+  'small': 550px,
+  'medium': 900px,
+  'large': 1080px
+);
+$h1-font-sizes: (
+  'null'  : 4em,
+  'medium': 7em,
+);
+$h2-font-sizes: (
+  'null'  : 1.8em,
+  'medium': 2.0em,
+  'large' : 2.4em
+);
+$description-font-sizes: (
+  'null'  : 0.9em,
+  'large': 1em,
+);
+$logo-font-sizes: (
+  'null'  : 1.3em,
+  'small' : 2.0em,
+);
+$button-font-sizes: (
+  'null'  : 0.7em,
+  'large' : 1.0em,
+);
+$link-font-sizes: (
+  'null'  : 1.0em,
+  'large' : 1.1em,
+);

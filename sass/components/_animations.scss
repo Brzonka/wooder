@@ -1,0 +1,10 @@
+@keyframes down{
+	from{transform: translateY(-40px)}
+	to{transform: translateY(0px)}
+}
+@keyframes up{
+	from{transform: translateY(40px);
+		opacity: 0;}
+	to{transform: translateY(0px);
+		opacity: 1;}
+}

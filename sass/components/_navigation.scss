@@ -1,0 +1,54 @@
+.navigation{
+	background-color: $text-color-dark;
+	position: absolute;
+	width: 100%;
+	&__menu{
+		margin: 23px 27px;
+		transition: 0.5s;
+		&__hamburger{
+			float: left;
+			padding: 3px;
+			transition:0.3s;
+			&__item{
+				background-color: $base-color;
+				height: 1px;
+				margin: 6px 0;
+				transition:0.3s;
+				width: 25px;
+				}
+			&:hover{
+				cursor: pointer;
+				margin-top:-4px;
+			}
+			&:hover .navigation__menu__hamburger__item{
+				background-color: $second-color;
+				margin:8px 0;
+			}
+		}
+		&__text{
+			color: $text-color-darklight-navi;
+			display: inline-block;
+			margin: 8px;
+			text-transform: uppercase;
+		}
+	}
+	&__list{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 100%;
+		&__item{
+			@extend .navigation__menu__text;
+			border-top: 1px solid $text-color-darklight-navi;
+			box-sizing: border-box;
+			display: block;
+			margin: 0 100px;
+			padding: 20px 50px;
+			text-align: center;
+			transition: 0.5s;
+			&:hover{
+				color: $base-color;
+				cursor: pointer;
+			}
+		}
+	}
+}

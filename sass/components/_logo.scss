@@ -1,0 +1,23 @@
+.logo{
+	position: absolute;
+	margin: 29px 27px;
+	max-width: 200px;
+	right:0;
+	transition: 0.5s;
+	z-index: 99;
+	&__text{
+		color: $text-color-light;
+		@include font-size($logo-font-sizes);
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		&::after{
+			background-color: $base-color;
+			content: "";
+			height: 4px;
+			left: 25px;
+			position: absolute;
+			top: calc(50% - 2px);
+			width: 35px;
+		}
+	}
+}

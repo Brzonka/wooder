@@ -1,1 +1,26 @@
-@import "base/reset";
+@charset 'utf-8';
+
+@import "helpers/mixins";
+
+@import "base/reset"; 
+@import "base/typography";
+@import "base/base"; 
+
+@import "components/animations";
+@import "components/headers";
+@import "components/descriptions";
+@import "components/links";
+@import "components/photos";
+@import "components/buttons";
+@import "components/logo";
+@import "components/navigation";
+
+@import "pages/prelude";
+@import "pages/furniture";
+@import "pages/decor";
+@import "pages/quality";
+@import "pages/video";
+@import "pages/about";
+@import "pages/footer-section";
+
+@import "components/media";

@@ -1,0 +1,21 @@
+.prelude{
+	background: url('../img/bg-1.jpg') bottom no-repeat;
+	box-sizing: border-box;
+	padding-top: 45vh;
+	height: 100vh;
+	text-align: center;
+	width: 100%;
+	&__header{
+		animation: 1s up;
+		color: $base-color;
+		@include font-size($h1-font-sizes);
+		letter-spacing: 15px;
+		text-transform: uppercase;
+		transition: 0.5s;
+	}
+	&__button{
+		@extend %button;
+		animation: 1s up 0.3s;
+		margin: 30px 0 0 -115px;
+	}
+}

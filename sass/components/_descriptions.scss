@@ -1,0 +1,29 @@
+%description-left-align,
+%description-right-align{
+	display: block;
+	@include font-size($description-font-sizes);
+	line-height: 25px;
+	margin-bottom: 20px;
+	position: relative;
+}
+%description-left-align::before,
+%description-right-align::after{
+	border-top: 3px solid $base-color;
+	content: "";
+	position: absolute; 
+	transition: 0.5s;
+	top: 11px;
+	width: 35px;
+}
+%description-left-align{
+	margin-left: 87px;
+	&::before{
+		left: -52px;
+	}
+}
+%description-right-align{
+	margin-right: 87px;
+	&::after{
+		right: -52px;
+	}
+}

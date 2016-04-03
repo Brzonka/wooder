@@ -1,0 +1,17 @@
+%button{
+	background: none;
+	border: 2px solid $text-color-light;
+	color: $text-color-light;
+	height: 35px;
+	@include font-size($button-font-sizes);
+	letter-spacing: 2px;
+	position: relative;
+	text-transform: uppercase;
+	transition: 0.5s;
+	width: 200px;
+	z-index: 99;
+	&:hover{
+		background-color: rgba(255,255,255,0.08);
+		cursor: pointer;
+	}
+}
