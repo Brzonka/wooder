@@ -1,10 +1,12 @@
 //Colors
 $gold: rgb(190, 166, 124);
+$gold-opacity: rgba(190, 166, 124, 0.6);
 $dark-gold: rgb(169, 148, 110);
 $white: rgb(255, 255, 255);
 $black: rgb(1, 1, 1);
 $grey: rgb(70, 70, 70);
 $grey-light: rgb(110, 110, 110);
+$base-color-opacity: $gold-opacity;
 $base-color: $gold;
 $second-color: $dark-gold;
 $text-color-dark: $black;
@@ -34,7 +36,7 @@ $description-font-sizes: (
 );
 $logo-font-sizes: (
   'null'  : 1.3em,
-  'small' : 2.0em,
+  'medium' : 2.0em,
 );
 $button-font-sizes: (
   'null'  : 0.7em,

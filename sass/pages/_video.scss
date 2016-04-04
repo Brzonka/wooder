@@ -1,4 +1,5 @@
 .video{
+	animation: 0.4s bg backwards paused;
 	background: url('../img/bg-2.jpg') center no-repeat;
 	background-color: $bg-mask;
 	background-blend-mode: overlay;
@@ -19,6 +20,7 @@
 		z-index: 1;
 	}
 	&__header{
+		animation: 1s slide-up backwards paused;
 		@extend %header-left-align;
 		color: $base-color;
 		max-width: 520px;
@@ -29,13 +31,39 @@
 	}
 	&__description{
 		@extend %description-left-align;
+		animation: 1s slide-up 0.3s backwards paused;
 		color: $text-color-light;
-		margin-bottom: 40px;
 		max-width: 520px;
 		width: 60%;
 	}
 	&__button{
 		@extend %button;
+		animation: 1s slide-left 0.6s backwards paused;
 		margin-left: calc(50% - 110px);
+		&__play{
+			border: 1px solid $text-color-light;
+			border-radius: 50%;
+			fill: $text-color-light;
+			height: 0.07in;
+			margin-bottom: -5px;
+			margin-top: -3px;
+			margin-right: 10px;
+			overflow: visible;
+			padding: 6px 5.5px 6px 6.5px;
+			width: 0.07in;
+		}
+	}
+	&__play-bg{
+		border: 50px solid $text-color-light;
+		border-radius: 50%;
+		fill: $text-color-light;
+		height: 3in;
+		opacity: 0.07;
+		overflow: visible;
+		padding: 215px 180px 215px 250px;
+		position: absolute;
+		right: 80px;
+		top: 40px;
+		width: 3in;
 	}
 }

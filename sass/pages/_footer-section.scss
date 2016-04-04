@@ -3,35 +3,27 @@
 	background-color: $bg-mask;
 	background-blend-mode: overlay;
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 5px;
 	height: 70px;
 	position: relative;
+	text-align: center;
 	&__copyright{
 		color: $text-color-darklight;
-		left: 0;
-		margin-left: 27px;
-		margin-top: -8px;
-		position: absolute;
 		text-transform: uppercase;
-		top: 50%;
 	}
 	&__logo{
 		text-align: center;
 		&__text{
 			@extend .logo__text;
 			display: inline-block;
+			padding: 5px;
 			position: relative;
 		}
 	}
 	&__author{
 		color: $text-color-darklight;
-		position: absolute;
-		margin-right: 27px;
-		margin-top: -8px;
-		right: 0;
-		top: 50%;
 		&--color{
-			color: $text-color-darklight * 1.2;
+			color: $text-color-darklight * 1.8;
 		}
 	}
 }

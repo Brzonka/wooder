@@ -1,17 +1,19 @@
 .furniture{
-	margin-top: 50px;
 	max-width: 650px;
 	padding: 100px 27px;
 	position: relative;
 	&__header{
+		animation: 1s slide-left backwards paused;
 		@extend %header-left-align;
 		color: $text-color-dark;
 	}
 	&__description{
+		animation: 1s slide-left 0.3s backwards paused;
 		@extend %description-left-align;
 		color: $text-color-darklight;
 	}
 	&__link{
+		animation: 1s slide-left 0.6s backwards paused;
 		@extend %link-left-align;
 		&__arrow{
 			@extend %link-arrow;

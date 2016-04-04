@@ -4,6 +4,7 @@
 	position: relative;
 	text-align: center;
 	&__header{
+		animation: 1s slide-up both paused;
 		font-weight: bold;
 		@include font-size($h2-font-sizes);
 		margin-bottom: 20px;
@@ -20,6 +21,7 @@
 		}
 	}
 	&__description{
+		animation: 1s slide-right 0.3s both paused;
 		@include font-size($description-font-sizes);
 		line-height: 150%;
 		margin: 40px auto;
@@ -46,9 +48,23 @@
 				border-radius: 122.5px;	
 			}
 			&__play{
+				background-color: $base-color-opacity;
+				border-radius: 50%;
+				fill: $text-color-light;
+				height: 0.3in;
+				margin-left: -35px;
+				margin-top: -65px;
+				overflow: visible;
+				padding: 20px 18px 20px 22px;
 				position: absolute;
 				left: 50%;
-				top: 100px;
+				top: 50%;
+				transition: 0.5s;
+				width: 0.3in;
+				&:hover{
+					background-color: $base-color;
+					cursor: pointer;
+				}
 			}
 			&__description{
 				margin-top:50px;
@@ -64,5 +80,15 @@
 				}
 			}
 		}
+		&__item:nth-child(1){
+			animation: 0.7s slide-up 0.8s both paused;
+		}
+		&__item:nth-child(2){
+			animation: 0.7s slide-up 1.4s both paused;
+		}
+		&__item:nth-child(3){
+			animation: 0.7s slide-up 1.8s both paused;
+		}
+
 	}
 }

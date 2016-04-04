@@ -6,16 +6,17 @@
 @import "base/typography";
 @import "base/base"; 
 
+@import "layout/headers";
+@import "layout/descriptions";
+
 @import "components/animations";
-@import "components/headers";
-@import "components/descriptions";
 @import "components/links";
 @import "components/photos";
 @import "components/buttons";
 @import "components/logo";
 @import "components/navigation";
 
-@import "pages/prelude";
+@import "pages/home";
 @import "pages/furniture";
 @import "pages/decor";
 @import "pages/quality";

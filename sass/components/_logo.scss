@@ -1,15 +1,18 @@
 .logo{
+	animation: 1s slide-down 0.6s forwards;
 	position: absolute;
 	margin: 29px 27px;
 	max-width: 200px;
 	right:0;
+	opacity: 0;
 	transition: 0.5s;
-	z-index: 99;
+	z-index: 9999;
 	&__text{
 		color: $text-color-light;
 		@include font-size($logo-font-sizes);
 		letter-spacing: 4px;
 		text-transform: uppercase;
+		transition: 0.5s;
 		&::after{
 			background-color: $base-color;
 			content: "";
@@ -19,5 +22,8 @@
 			top: calc(50% - 2px);
 			width: 35px;
 		}
+	}
+	&--fixed{
+		position: fixed;
 	}
 }
