@@ -387,6 +387,8 @@ body {
     -webkit-animation: 1s slide-up 0.3s backwards;
             animation: 1s slide-up 0.3s backwards;
     margin: 30px 0 0 -180px; }
+    .home__button__arrow {
+      stroke: white; }
 
 .furniture {
   max-width: 650px;
